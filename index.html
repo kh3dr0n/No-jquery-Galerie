@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Galerie de photo</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="author" content="Marwen Kheder">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div id="container">
+			
+			<div id="slider">
+			<div id="switchview" onclick="switchview()"></div>
+			<div id="slidep" onclick="playstopslide()"></div>
+			<div id="smail" onclick="dismail()"></div>
+			<div id="in" onclick="inext()"></div>
+			<div id="ip" onclick="iprev()"></div>
+			</div>
+			<div id="list">
+	<div id="sn" onmouseover="next()" onmouseout="stopnext()" ></div>
+	<div id="sp" onmouseover="prev()" onmouseout="stopprev()" ></div>
+	<div id="cnt">
+</div>
+</div>
+</div>
+<div id="shadow"></div>
+<div id="boxs">
+<div id="mail">
+	<form>
+	<span>Votre Nom : </span>
+<input  type="text" id="name" class="text"><br>
+		<span>Votre e-mail : </span>
+<input type="text" id="email" class="text"><br>
+<span>Votre commantaire : </span><br>
+<textarea name="sub" id="subject" width=400 hieght=400></textarea><br>
+<input type="button" onclick="sendmail()" value="Envoyer" class="bt"></input>
+<input type="reset" value="Effacer" class="bt" ></input>
+</form>
+<a id="close" href="#" onclick="hidemail()"></a>
+
+</div>
+
+</div>
+
+
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
